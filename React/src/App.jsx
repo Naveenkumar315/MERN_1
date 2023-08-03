@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Users from './Users'
 import CreatUser from './CreateUser'
 import UpdateUser from './UpdateUser'
-import ExpenseList from './ExpenseList'
+import ExpenseList from './Expnsive/ExpenseList'
 
 function App() {
   const [count, setCount] = useState(0)
