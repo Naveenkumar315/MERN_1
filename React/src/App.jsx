@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Users from './Users'
 import CreatUser from './CreateUser'
 import UpdateUser from './UpdateUser'
+import ExpenseList from './ExpenseList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Users/>} ></Route>
+          <Route path='/' element={<ExpenseList/>} ></Route>
+          {/* <Route path='/' element={<Users/>} ></Route> */}
           <Route path='/create' element={<CreatUser/>} ></Route>
           <Route path='/update/:id' element={<UpdateUser/>} ></Route>
         </Routes>

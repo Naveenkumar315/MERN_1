@@ -10,9 +10,9 @@ function CreatUser() {
   const navigate = useNavigate()
 
   const Submit = (e)=> {
+    // to avoid page refresh while submitting the form
     e.preventDefault()
     axios.post('http://localhost:3005/createUser', {FirstName, LastName, Age}).then((result)=>{
-      console.log(result)
       navigate('/')
     }).catch((err)=>{
       console.log('error', err)
